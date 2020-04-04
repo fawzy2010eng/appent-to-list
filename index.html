@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+  <ul id="list">
+  </ul>
+
+  <script>
+    // ...your code...
+      var list = document.getElementsByTagName('ul')[0];
+      var result = prompt('enter your family member');
+      while(result != null){
+          var li = document.createElement('li');
+          li.textContent = result;
+          list.append(li);
+          result = prompt('enter your family member')
+      }
+  </script>
+
+</body>
+</html>
